@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Ticketing Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 px-5 py-5">
+   <header class="mb-32">
+   <div class="mx-20">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl text-black font-bold">E-Ticketing</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn text-green-600 text-xl font-semibold border-1 rounded-lg border-green-500">Bus <span><img src="images/bus-icon.svg" alt="" srcset=""></span></a>
+        </div>
+      </div>
+   </div>
+
+  <div style="background-image: url( images/banner.png);" class="min-h-[500px] bg-no-repeat mx-20 bg-auto bg-center bg-slate-950 bg-opacity-100">
+    <div class="pt-16">
+        <h1 class="text-5xl text-white text-center py-10">End-to-End Travel with <br> <span>P Paribahan</span> </h1>
+        <p class="text-center text-white">
+            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+        </p>
+        <div class="pl-[500px] pt-10 ">
+            <button id="buy-now" class="btn btn-success border-green-600
+            text-black font-bold text-xl">Buy Now</button>
+        </div>
+    </div>  
+</div>
+
+
+</header>
+   <main>
+
+<div class="flex gap-10 justify-center mt-10">
+
+<!-- First Offer -->
+    <div class="flex gap-2">
+        <div class="bg-orange-500 rounded-xl p-5">
+            <h1 class="text-3xl font-bold">15% OFF</h1>
+            <p class="font-bold"
+    >on your next purchase</p>
+            <p>use by January 2024</p>
+        </div>
+<!-- First Coupon -->
+        <div class="bg-orange-500 rounded-xl p-5">
+            <h1 class="text-2xl font-bold">NEW15</h1>
+            <p class="font-bold">Coupon Code</p>
+        </div>
+
+    </div>
+
+<!-- Second Offer -->
+    <div class="flex gap-2">
+        <div class="bg-pink-500 rounded-xl p-5">
+            <h1 class="text-3xl font-bold">15% OFF</h1>
+            <p class="font-bold"
+    >on your next purchase</p>
+            <p>use by January 2024</p>
+        </div>
+        <!-- Second Coupon -->
+            <div class="bg-pink-500 h-30 rounded-xl p-5">
+                <h1 class="text-2xl font-bold">Couple 20</h1>
+                <p class="font-bold">Coupon Code</p>
+            </div>
+    </div>
+</div>
+<!-- Offer Button (static) -->
+<div class="ml-[570px] mt-10">
+    <button class="btn btn-outline btn-primary">See All Offers</button>
+</div>
+
+<!-- End the offer section -->
+<!-- Main-Section -->
+<section class="mt-10 mx-10">
+    <div class="text-center">
+        <h1 class="text-2xl font-semibold">P.H Paribahan</h1>
+        <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+    </div>
+    <!-- Departure and price section (static) -->
+ <section class="flex justify-center gap-10">
+        <div class="mt-10 mx-5 rounded-xl bg-slate-50 p-5">
+            <div class="flex justify-between mb-10">
+                <div class="flex">
+                  <div>
+                      <img src="images/bus-logo.png" alt="" srcset="">
+                  </div><div>
+                  <p class="text-2xl font-bold">Greenline Paribahan </p>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn btn-active bg-green-200 font-bold border-green-200 text-green-600"><p><span id="diff">40</span>Seats left</p></button>
+                </div>
+              </div>
+        
+              <div class="space-y-3 bg-slate-100 p-10 rounded-xl">
+               <div class="flex justify-between">
+                <p>Route</p>
+                <p class="font-bold">Dhaka-Sylhet</p>
+               </div>
+               <hr class="divide-dotted">
+               <div class="flex justify-between">
+                <p>Departure Time</p>
+                <p class="font-bold">9:00</p>
+               </div>
+               <hr>
+               <div class="flex justify-center space-x-8">
+                <button class="btn rounded-xl">Boarding Point - Laxmipur</button>
+                <button class="btn rounded-xl">Dropping Point - Bogura</button>
+                <button class="btn rounded-xl">Est. Time - 11 Hour</button>
+                
+               </div>
+              </div>
+            </div>
+
+            <div class="px-10 pt-28 rounded-xl">
+                <img src="images/fare.png" alt="" srcset="">
+                <h1 class="text-2xl font-bold">550 Taka</h1>
+                <p>Per Seat</p>
+            </div>
+    </section>
+</section>
+
+<section class="flex justify-center gap-10 w-[1100] p-10 mx-32 my-4 rounded-2xl bg-zinc-50">
+<!-- Seat Select left side -->
+<div class="gap-10 bg-white p-10 rounded-lg">
+  <h3 class="text-xl font-bold">Select Your Seat</h3>
+  <br>
+  <hr><br>
+  <!-- Available or Selected -->
+  <div class="flex justify-between gap-24"><p class="flex"><img src="images/seat-gray.png" alt="" srcset="">Available</p>
+  <p class="flex text-green-600"><img src="images/seat-green-filled.png" alt="" srcset="">Selected</p>
+  </div>
+
+  <!-- Seat -->
+  <div class="flex gap-20 pt-10 justify-center ">
+    <!-- left side -->
+    <div class="grid grid-cols-2 gap-5">
+      <kbd class="kbd hover:">A1</kbd>
+      <kbd class="kbd hover:">A2</kbd>
+      <kbd class="kbd hover:">B1</kbd>
+      <kbd class="kbd hover:">B2</kbd>
+      <kbd class="kbd hover:">C1</kbd>
+      <kbd class="kbd hover:">C2</kbd>
+      <kbd class="kbd hover:">D1</kbd>
+      <kbd class="kbd hover:">D2</kbd>
+      <kbd class="kbd hover:">E1</kbd>
+      <kbd class="kbd hover:">E2</kbd>
+      <kbd class="kbd hover:">F1</kbd>
+      <kbd class="kbd hover:">F2</kbd>
+      <kbd class="kbd hover:">G1</kbd>
+      <kbd class="kbd hover:">G2</kbd>
+      <kbd class="kbd hover:">H1</kbd>
+      <kbd class="kbd hover:">H2</kbd>
+      <kbd class="kbd hover:">I1</kbd>
+      <kbd class="kbd hover:">I2</kbd>
+      <kbd class="kbd hover:">J1</kbd>
+      <kbd class="kbd hover:">J2</kbd>
+    
+    </div>
+    <!-- right side -->
+    <div class="grid grid-cols-2 gap-5">
+      <kbd class="kbd">A3</kbd>
+      <kbd class="kbd">A4</kbd>
+      <kbd class="kbd">B3</kbd>
+      <kbd class="kbd">B4</kbd>
+      <kbd class="kbd">C3</kbd>
+      <kbd class="kbd">C4</kbd>
+      <kbd class="kbd">D3</kbd>
+      <kbd class="kbd">D4</kbd>
+      <kbd class="kbd">E3</kbd>
+      <kbd class="kbd">E4</kbd>
+      <kbd class="kbd">F3</kbd>
+      <kbd class="kbd">F4</kbd>
+      <kbd class="kbd">G3</kbd>
+      <kbd class="kbd">G4</kbd>
+      <kbd class="kbd">H3</kbd>
+      <kbd class="kbd">H4</kbd>
+      <kbd class="kbd">I3</kbd>
+      <kbd class="kbd">I4</kbd>
+      <kbd class="kbd">J3</kbd>
+      <kbd class="kbd">J4</kbd>
+     
+    </div>
+  </div>
+  
+  </div>
+  <!-- Seat section right side -->
+  <div class="space-y-5 bg-white p-10">
+    <!-- seat class price -->
+    <div class="space-y-5 bg-gray-50 rounded-lg p-10">
+      <h3 class="text-xl font-bold">Select Your Seat</h3>
+      <div class="flex justify-between">
+        <p class="text-xl font-bold">Seat<span id="seat-count" class="bg-green-600 text-white p-2 rounded-full">0</span></p>
+        <p class="text-xl font-bold">Class</p>
+        <p class="text-xl font-bold">Price</p>
+      </div>
+      <hr>
+      <div>
+        <ul>
+  
+        </ul>
+      </div>
+      <hr>
+      <!-- Total Price -->
+      <div class="flex justify-between">
+   <p class="font-bold">Total Price</p>
+   <p class="font-bold">BDT<span id="total-price">0</span></p>
+      </div>
+      <!-- Input field of coupon -->
+      <div class="flex">
+        <input type="text" placeholder="Have Any Coupon" class="input input-bordered w-full max-w-xs" /> 
+        <button class="btn btn-success">Success</button>
+      </div>
+  
+      <!-- GRand Total -->
+      
+      <div class="flex justify-between">
+        <p class="font-bold">Grand Total</p>
+        <p class="font-bold">BDT<span id="grand-total">0</span></p>
+           </div>
+     
+    </div>
+
+      <div class="space-y-3">
+        <span class="font-bold">Passenger Name*</span>
+        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+      </div>
+      <div class="space-y-3">
+        <span class="font-bold">Phone Number*</span>
+        <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+      </div>
+      <div class="space-y-3">
+        <span class="font-bold">Email ID</span>
+        <input type="email" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
+      </div>
+      <button id="btn" onclick="handle()" class="btn bg-green-600 text-white w-full font-bold">Next</button>
+
+</section>
+   </main>
+   <footer>
+
+   </footer>
+   <script src="index.js"></script>
+</body>
+</html>
